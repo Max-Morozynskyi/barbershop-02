@@ -1,0 +1,287 @@
+/* общие переменные */
+
+:root {
+  --main-color: #ff6c00;
+  --preview-color-light: rgba(157, 164, 189, 0.6);
+  --text-color-light: #9da4bd;
+  --preview-color-dark: #303030;
+  --text-color-dark: #555555;
+  --dark-background: #191c26;
+  --light-background: #f7f7f7;
+}
+
+/* Общие свойства */
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+ul,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul > li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.text {
+  font-size: 18px;
+  line-height: 1.7;
+  letter-spacing: 0.02em;
+}
+.container {
+  width: 1280px;
+  padding-left: 55px;
+  padding-right: 55px;
+  margin-left: auto;
+  margin-right: auto;
+
+  outline: 2px solid tomato;
+}
+.button {
+  display: inline-block;
+  border: 1px solid var(--main-color);
+  border-radius: 20px;
+  width: 160px;
+  height: 40px;
+  text-align: center;
+  padding-top: 12px;
+  cursor: pointer;
+}
+
+/* хедер */
+
+.head .link {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.3;
+  letter-spacing: 0.1em;
+
+  color: white;
+}
+.head .link:hover {
+  color: var(--main-color);
+}
+.head .button,
+.about .button,
+.price .button {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.3;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+.head .button,
+.price .button {
+  color: #ffffff;
+}
+.head .button:hover,
+.about .button:hover,
+.price .button:hover {
+  background-color: var(--main-color);
+}
+.header-links {
+    display: flex;
+    margin-top: 52px;
+    align-items: baseline;
+    justify-content: space-between;
+}
+/* .head .container, */
+.head .list {
+    display: flex;
+
+}
+
+/* timeless */
+.head,
+.hero {
+  background-color: var(--dark-background);
+}
+
+/* секция герой */
+
+.social-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.3;
+  letter-spacing: 0.2em;
+
+  color: var(--preview-color-dark);
+}
+.social-link:hover {
+  color: var(--main-color);
+}
+.formula {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.3;
+
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--preview-color-dark);
+}
+.hero .formula,
+.price .formula {
+  color: var(--preview-color-light);
+}
+.hero > .main-title {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 1.2;
+
+  letter-spacing: 0.05em;
+
+  color: #ffffff;
+}
+.hero > .text {
+  color: var(--text-color-light);
+}
+.hero .button {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.3;
+
+  letter-spacing: 0.1em;
+
+  color: var(--preview-color-light);
+}
+.hero .button:hover {
+  color: #ffffff;
+}
+
+/* о нас */
+.title {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.167;
+  letter-spacing: 0.05em;
+
+  color: var(--preview-color-dark);
+}
+.about .text,
+.stats .text {
+  color: var(--text-color-dark);
+}
+.about .report {
+  font-size: 14px;
+  line-height: 1.86;
+
+  letter-spacing: 0.02em;
+
+  color: var(--text-color-dark);
+}
+.about .button {
+  color: var(--preview-color-dark);
+}
+.about .button:hover {
+  color: #ffffff;
+}
+
+/* прайс */
+.price .title {
+  color: #ffffff;
+}
+.price .table {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+
+  color: var(--text-color-light);
+}
+
+/* статистика */
+.stats > .about {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.37;
+  text-align: center;
+
+  color: var(--preview-color-dark);
+}
+.stats .quantity {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.36;
+  letter-spacing: 0.05em;
+
+  color: var(--preview-color-dark);
+}
+.stats .plus {
+  color: var(--main-color);
+}
+
+/* наши мастера */
+.workers {
+  background-color: var(--light-background);
+}
+.workers .name {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.4;
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  color: var(--preview-color-dark);
+}
+.workers .position {
+  font-size: 14px;
+  line-height: 1.4;
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  color: var(--main-color);
+}
+
+/* contacts */
+.contacts {
+  background-color: var(--dark-background);
+}
+.contacts .title {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 49px;
+  letter-spacing: 0.05em;
+  color: #fff;
+}
+#form > .title {
+  color: rgba(100%, 100%, 100%, 0.6);
+}
+.contacts .adress-info a,
+.contacts .work-time-text {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+
+  color: var(--text-color-light);
+}
+.contacts .formula {
+  color: #fff;
+}
+.adress-info a:hover {
+  color: var(--main-color);
+}
+
+/* footer */
+.copyright {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.3;
+  letter-spacing: 0.2em;
+  color: var(--text-color-light);
+}
