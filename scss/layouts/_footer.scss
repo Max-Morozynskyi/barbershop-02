@@ -1,0 +1,166 @@
+/* footer section */
+
+.footer {
+  padding: 60px 0;
+  background-color: var(--bg-clr-main);
+  
+  &__box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+
+    @include media(comp) {
+      gap: 0;
+    }
+  }
+
+  &__logo {margin-bottom: 20px;}
+}
+
+.bottom-studio {
+  color: var(--white-clr);
+}
+
+.contacts {
+  flex-grow: 1;
+  flex-basis: 300px;
+
+  text-align: center;
+
+  font-style: inherit;
+  @include font(none, 14px, 24px);
+
+  @include media(comp) {
+      text-align: start;
+    }
+  
+  &__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+  
+  &__address {
+    color: var(--white-clr);
+  }
+  
+  &__link {
+    color: var(--foot-adress);
+  }
+}
+
+.join,
+.subscribe {
+  text-align: center;
+  @include media(comp) {
+    margin-top: 12px;
+    text-align: start;
+  }
+  
+  &__title {
+    display: inline-block;
+    margin-bottom: 20px;
+    
+    @extend %title-small;
+    
+    color: var(--white-clr);
+  }
+}
+.join {
+  flex-grow: 1;
+  flex-basis: 300px;
+  @media screen and (min-width: map-get($breakpoints, 'tablet')) and (max-width: (map-get($breakpoints, 'comp') - 1px)) {
+    margin-top: 5px;
+  }
+}
+
+  @include media(comp) { .join .social-list {
+    justify-content: start;
+  }
+}
+
+.join .social-list__item {
+  color: var(--white-clr);
+  background-color: var(--foot-icon);
+  transition: background-color var(--transition-var);
+}
+
+.subscribe {
+  flex-grow: 2;
+  flex-basis: 570px;
+  margin-left: auto;
+  
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include media(comp) {flex-direction: row;}
+  }
+  
+  &__input {
+    padding: 15px 16px;
+    background-color: transparent;
+    max-width: 450px;
+    width: 100%;
+    border: none;
+    outline: none;
+    
+    @include transition-main(border-color);
+    
+    font-size: 16px;
+    color: var(--foot-adress);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+
+    @include media(comp) {
+      width: calc(100% - 12px);
+    }
+  }
+  
+  &__label {
+    position: relative;
+    flex-grow: 1;
+    align-self: stretch;
+  }
+  
+  &__text {
+    position: absolute;
+    left: 16px;
+    bottom: 15px;
+    font-size: 16px;
+    color: var(--foot-adress);
+    transform: translateY(0);
+    
+    @include transition-main();
+    @media screen and (min-width: map-get($breakpoints, 'tablet')) and (max-width: (map-get($breakpoints, 'comp') - 1px)) {
+        left: 160px;
+      }
+  }
+
+  &__btn {
+    flex-grow: 0;
+    margin-top: 20px;
+    @include media(comp) {margin-top: 0;}
+  }
+}
+
+
+.subscribe__input:focus {
+  outline: none;
+  border-color: var(--main-clr);
+}
+
+.subscribe__input:focus+.subscribe__text {
+  color: var(--main-clr);
+}
+
+.subscribe__input:focus+.subscribe__text,
+.subscribe__input:not(:placeholder-shown)+.subscribe__text {
+  transform: translateY(45px);
+  @include transition-main(transform);
+}
+
+.icon-send {
+  margin-left: 10px;
+  vertical-align: middle;
+}

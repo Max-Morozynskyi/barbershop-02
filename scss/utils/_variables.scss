@@ -1,0 +1,14 @@
+  :root {
+    --main-color: #ff6c00;
+    --preview-color-light: rgba(157, 164, 189, 0.6);
+    --text-color-light: #9da4bd;
+    --preview-color-dark: #303030;
+    --text-color-dark: #555555;
+    --dark-background: #191c26;
+    --light-background: #f7f7f7;
+  }
+
+$breakpoints: (
+  'mobile': 480px,
+  'tablet': 768px,
+  'comp': 1200px)

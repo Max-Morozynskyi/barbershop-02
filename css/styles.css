@@ -1,38 +1,5 @@
-/* общие переменные */
-
-:root {
-  --main-color: #ff6c00;
-  --preview-color-light: rgba(157, 164, 189, 0.6);
-  --text-color-light: #9da4bd;
-  --preview-color-dark: #303030;
-  --text-color-dark: #555555;
-  --dark-background: #191c26;
-  --light-background: #f7f7f7;
-}
-
 /* Общие свойства */
 
-body {
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-}
-ul,
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-}
-ul > li {
-  list-style: none;
-}
-a {
-  text-decoration: none;
-}
 .text {
   font-size: 18px;
   line-height: 1.7;
@@ -90,15 +57,14 @@ a {
   background-color: var(--main-color);
 }
 .header-links {
-    display: flex;
-    margin-top: 52px;
-    align-items: baseline;
-    justify-content: space-between;
+  display: flex;
+  margin-top: 52px;
+  align-items: baseline;
+  justify-content: space-between;
 }
 /* .head .container, */
 .head .list {
-    display: flex;
-
+  display: flex;
 }
 
 /* timeless */

@@ -1,0 +1,19 @@
+.container {
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 100%;
+
+  @include media(mobile) {
+    max-width: map-get($breakpoints, mobile);
+  }
+
+  @include media(tablet) {
+    max-width: map-get($breakpoints, tablet);
+  }
+
+  @include media(comp) {
+    max-width: map-get($breakpoints, comp);
+  }
+}

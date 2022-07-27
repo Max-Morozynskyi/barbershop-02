@@ -1,0 +1,28 @@
+%section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @include media(comp) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+%title-big {
+    margin-bottom: 30px;
+
+    text-align: center;
+    @include font(700, 28px, 33px);
+
+    @include media(comp) {
+      @include font(700, 36px, 42px);
+      margin-bottom: 50px;
+    }
+}
+
+%title-small {
+  margin-bottom: 10px;
+  @include font(none, 14px, 16px);
+  
+  text-transform: uppercase;
+}

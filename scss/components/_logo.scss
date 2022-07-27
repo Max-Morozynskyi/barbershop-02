@@ -1,0 +1,18 @@
+.logo {
+
+  display: inline-flex;
+  align-items: center;
+  font-family: "Raleway", sans-serif;
+  @include font(700, 24px, 28px);
+  
+  @include media(comp){
+    @include font(700, 26px, 30.5px);
+  }
+
+  color: var(--main-clr);
+  
+}
+
+.logo--head {
+  color: black;
+}
