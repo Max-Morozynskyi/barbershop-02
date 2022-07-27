@@ -1,4 +1,4 @@
-# barbershop-01
+# barbershop-02
 
 исправить:
 
