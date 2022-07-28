@@ -21,36 +21,86 @@
     <link rel="stylesheet" href="./css/main.min.css" />
     <link rel="shortcut icon" href="./images/favicon.ico" type="image.x-icon" />
   </head>
+
   <body>
-    <!-- header section -->
+    <!-- ------------------------- header section -------------------------- -->
     <header class="header">
       <div class="container">
-        <a href="./index.html"
-          ><img src="./images/logo.svg" alt="logo" width="69" height="56"
-        /></a>
-        <div class="header-links">
-          <div class="nav">
-            <nav>
-              <ul class="list">
-                <li class="list-item">
-                  <a href="#about" class="link">О нас</a>
-                </li>
-                <li class="list-item">
-                  <a href="#price" class="link">Услуги и цены</a>
-                </li>
-                <li class="list-item">
-                  <a href="#workers" class="link">Мастера</a>
-                </li>
-                <li class="list-item">
-                  <a href="#contacts" class="link">Контакты</a>
-                </li>
-              </ul>
-            </nav>
+        <!-- ------------------------- mobile vers ------------------------- -->
+        <div class="mobile-nav">
+          <a href="./index.html">
+            <svg class="logo icon">
+              <use
+                href="./images/icons.svg#icon-logo"
+                width="69"
+                height="56"
+              ></use>
+            </svg>
+          </a>
+          <button class="burger-btn" type="button" data-menu-button>
+            <svg class="icon">
+              <use
+                class="burger-btn__open"
+                href="./images/icons.svg#icon-menu"
+                width="32"
+                height="32"
+              ></use>
+              <use
+                class="burger-btn__close"
+                href="./images/icons.svg#icon-close"
+                width="32"
+                height="32"
+              ></use>
+            </svg>
+          </button>
+        </div>
+        <!-- -------------------------- whole nav -------------------------- -->
+        <div class="menu">
+          <nav class="main-nav">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a class="main-nav__link link" href="#about">О нас</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link link" href="#price">Услуги и цены</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link link" href="#workers">Мастера</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link link" href="#contacts">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="main-nav__contacts">
+            <a class="link main-nav__phone" href="tel:+380441111111"
+              >+38 044 111 11 11</a
+            >
+            <a class="button main-nav__btn" href="#form">онлайн-запись</a>
           </div>
-          <div class="contact-info">
-            <a href="tel:+380441111111" class="link">+38 044 111 11 11</a>
-            <a href="#form" class="button">онлайн-запись</a>
-          </div>
+
+          <!-- ------------------------ social links ------------------------- -->
+          <ul class="follow-us">
+            <li class="follow-us__item">
+              <a
+                class="follow-us__link"
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Instagram</a
+              >
+            </li>
+            <li class="follow-us__item">
+              <a
+                class="follow-us__link"
+                href="https://www.youtube.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Youtube</a
+              >
+            </li>
+          </ul>
         </div>
       </div>
     </header>
@@ -58,26 +108,6 @@
     <main>
       <!-- section hero -->
       <section class="hero">
-        <ul>
-          <li>
-            <a
-              href="https://www.instagram.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="social-link"
-              >Instagram</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://www.youtube.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="social-link"
-              >Youtube</a
-            >
-          </li>
-        </ul>
         <p lang="en" class="formula">A hair salon for men in Kyiv</p>
         <h1 class="main-title">BarberShop</h1>
         <p class="text">

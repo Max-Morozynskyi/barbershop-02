@@ -7,7 +7,7 @@
   transition-timing-function: $main-cubic-bezier;
 }
 
-@mixin font($fw: 400, $fs, $lh, $ls: 0.03em) {
+@mixin font($fs, $lh, $fw: 400, $ls: 0.03em) {
   $lhindex: calc($lh / $fs);
 
   font-weight: $fw;
